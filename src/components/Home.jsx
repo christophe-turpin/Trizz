@@ -22,9 +22,9 @@ function Home() {
 
     function resetTrizzer() {
         localStorage.removeItem('name')
-        localStorage.setItem('points', 0)
-        localStorage.setItem('plantedTrizz', 0)
-        localStorage.setItem('trizz', 0)
+        localStorage.setItem('points', Number(0))
+        localStorage.setItem('plantedTrizz', Number(0))
+        localStorage.setItem('trizz', Number(0))
         window.location.reload(false)
     }
 
