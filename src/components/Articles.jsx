@@ -41,9 +41,9 @@ function CardExampleLinkCard() {
 
                             <Grid.Column>
                                 <Segment id="previewArticle">
-                                    <List className='ListMap' widht='100px' height='30px'>
+                                    <List className='ListMap' widht='100px' height='30px' as='a' href={article.url} target='_blanck' >
 
-                                        <Image src={article.urlToImage} as='a' href={article.url} target='_blanck' />
+                                        <Image src={article.urlToImage} />
                                         <List.Content>
                                             <List.Header><br />{article.title}</List.Header>
                                             <br />Published {article.publishedAt.substr(0, 10)}
