@@ -24,7 +24,7 @@ function GridExampleCelledInternally() {
         setMonth(new Date().toLocaleDateString().substr(3, 2))
     }
     function getArticles() {
-        const url = 'http://newsapi.org/v2/everything?' +
+        const url = 'https://newsapi.org/v2/everything?' +
             'q=Reforestation&' +
             `from=2020-${month}-01&` +
             'sortBy=publishedAt&' +

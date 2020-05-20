@@ -12,16 +12,12 @@ function CardExampleLinkCard() {
     // }
 
     function getArticles() {
-        const url = 'http://newsapi.org/v2/everything?' +
+        const url = 'https://newsapi.org/v2/everything?' +
             'q=Reforestation&' +
             'sortBy=publishedAt&' +
             'pageSize=12&' +
             'apiKey=ffa55fe5bf19423f8bdd688c681415e3';
-        Axios.get(url, { 
-            headers: {
-                'Access-Control-Allow-Origin': 'https://laughing-keller-a7654c.netlify.app/'
-        }
-    })
+        Axios.get(url)
             .then(response => setArticles(response.data.articles))
     }
     useEffect(() => {

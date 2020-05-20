@@ -127,7 +127,7 @@ class Quiz extends Component {
 
 
     render() {
-        const { questions, options, answer, score, currentQuestion, category, difficulty, userAnswer, QuizData, quizEnd } = this.state
+        const { questions, options, answer, score, currentQuestion, category, difficulty, QuizData, quizEnd } = this.state
         if (quizEnd) {
             return (
 
@@ -189,8 +189,6 @@ class Quiz extends Component {
                     }).map(option => (
 
                         <div><Button className='answer' color='teal' key={option}
-                            className={`question
-                    ${userAnswer === option ? "selected" : null}`}
                             onClick={() => this.checkAnswer(option)}
                         >
                             {option}
