@@ -12,7 +12,7 @@ function CardExampleLinkCard() {
     // }
 
     function getArticles() {
-        const url = 'https://newsapi.org/v2/everything?' +
+        const url = 'http://newsapi.org/v2/everything?' +
             'q=Reforestation&' +
             'sortBy=publishedAt&' +
             'pageSize=12&' +
