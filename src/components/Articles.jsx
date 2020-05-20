@@ -28,10 +28,11 @@ function CardExampleLinkCard() {
     // }, [])
 
     return (
-
+        
         <div id='corpusArticlus'>
             <Message id='bandeauArticles'>
-                <h2 className='Header'>The last 12 articles of the month</h2>
+                <h2 className='Header'>The last 12 articles of the month {
+                    console.log(articles)}</h2>
             </Message>
             <Grid id='articles' columns={4} doubling stackable container divided >
                 {articles.map(article => {
