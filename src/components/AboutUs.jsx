@@ -20,7 +20,7 @@ class AboutUs extends Component {
                 <Grid id='linkedin' columns={4} container divided stackable>
                     <Grid.Column>
                         <Segment><Card>
-                            <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQFzwNY046bCXw/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=u0WMAs_Bc_bq3NirOyD9lDiBarDu1CZ2ONOPBCZQqjU' wrapped ui={false} />
+                            <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQFh1HPcZ21hGg/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=UJCK_2NLfTLd4P1dLL6zVdWOH7lctYWZZ48Oyrg8rqw' wrapped ui={false} />
                             <Card.Content>
                                 <Card.Header>Anaïs REAU</Card.Header>
                                 <Card.Meta>

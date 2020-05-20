@@ -17,7 +17,7 @@ function CardExampleLinkCard() {
             'sortBy=publishedAt&' +
             'pageSize=12&' +
             'apiKey=ffa55fe5bf19423f8bdd688c681415e3';
-        Axios.get(url, { 'Access-Control-Allow-Origin': '*' })
+        Axios.get(url, {'Access-Control-Allow-Origin': '*'})
             .then(response => setArticles(response.data.articles))
     }
     useEffect(() => {
