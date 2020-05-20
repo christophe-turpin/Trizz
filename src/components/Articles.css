@@ -1,0 +1,39 @@
+#articles{
+    padding-top: 30px;
+}
+
+#corpusArticlus{
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bandeauArticles{
+  border: solid 0.8em;
+  border-image: url('https://www.vallorbe.com/common/img/library//1350x404_croppedcenter/Bois.jpg')100;
+  width: fit-content;
+  align-self: center;
+}
+
+.article{
+    max-height: 100px;
+    margin: 50px;
+}
+.ListMap{
+    
+    min-height:min-content;
+    
+}
+
+.reforest{
+    width: 10%;
+}
+
+.action{
+    display: inline-flexbox;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+}

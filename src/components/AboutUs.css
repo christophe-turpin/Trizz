@@ -1,0 +1,19 @@
+
+#corpusAboutUs{
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#linkedin{
+    padding-top: 30px;
+}
+
+#bandeauAboutUs{
+  border: solid 0.8em;
+  border-image: url('https://www.vallorbe.com/common/img/library//1350x404_croppedcenter/Bois.jpg')100;
+  width: fit-content;
+  align-self: center;
+}

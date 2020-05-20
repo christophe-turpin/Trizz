@@ -1,0 +1,55 @@
+.leaflet-container {
+  height: 400px;
+  width: 70%;
+  margin-left: auto; margin-right: auto; margin-top: 100px;
+  
+}
+
+.spanCss {
+  background-image: url("https://degroote-benjamin.github.io/Celinepizzi/img/U85Z0lxOwDoys.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+#mapHeader{
+  padding-top: 80px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+#bandeauMaps{
+  border: solid 0.8em;
+  border-image: url('https://www.vallorbe.com/common/img/library//1350x404_croppedcenter/Bois.jpg')100;
+  width: fit-content;
+  align-self: center;
+}
+
+#webcam {
+  width: 350px;
+}
+ .map{
+   z-index: 0;
+   margin-top:40px;
+
+ }
+
+ #maph1{
+   text-align: center;
+   font-size : xx-large;
+   color: green;
+   text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+ }
+
+ #maph2{
+   text-align: center;
+   font-size: x-large;
+   color: greenyellow;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+ .grow{
+   width: 200px;
+   
+ }

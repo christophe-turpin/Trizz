@@ -1,0 +1,80 @@
+
+#recap {
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#gameOver {
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bandeauQuiz{
+  border: solid 0.8em;
+  border-image: url('https://www.vallorbe.com/common/img/library//1350x404_croppedcenter/Bois.jpg')100;
+  width: fit-content;
+  align-self: center;
+}
+
+#bandeauFinish{
+  border: solid 0.8em;
+  border-image: url('https://www.vallorbe.com/common/img/library//1350x404_croppedcenter/Bois.jpg')100;
+  width: fit-content;
+  align-self: center;
+}
+.questionPage {
+    width: 30%;
+    min-height: 250px; 
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.options {
+    padding: 8px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: teal;
+}
+
+.floating{
+    filter:Alpha(opacity=100);
+    -moz-opacity:0.80;
+    opacity: 0.80;
+}
+
+#startButton{
+    width: fit-content;
+    align-self: center;
+}
+
+.category{
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.choose{
+    padding-top: 50px;
+}
+
+.question{
+   width: 100%;
+   justify-content: center;
+}
+
+.column{
+    justify-content: center;    
+    width: 20%;
+}
