@@ -5,16 +5,15 @@ import './Articles.css'
 
 function CardExampleLinkCard() {
     const [articles, setArticles] = useState([])
-    const [month, setMonth] = useState()
-    function Clock() {
-        // setDate(new Date().toLocaleDateString())
-        setMonth(new Date().toLocaleDateString().substr(3, 2))
-    }
+    // const [month, setMonth] = useState()
+    // function Clock() {
+    //     // setDate(new Date().toLocaleDateString())
+    //     setMonth(new Date().toLocaleDateString().substr(3, 2))
+    // }
 
     function getArticles() {
         const url = 'http://newsapi.org/v2/everything?' +
             'q=Reforestation&' +
-            `from=2020-${month}-01&` +
             'sortBy=publishedAt&' +
             'pageSize=12&' +
             'apiKey=ffa55fe5bf19423f8bdd688c681415e3';
@@ -24,9 +23,9 @@ function CardExampleLinkCard() {
     useEffect(() => {
         getArticles()
     }, [])
-    useEffect(() => {
-        Clock()
-    }, [])
+    // useEffect(() => {
+    //     Clock()
+    // }, [])
 
     return (
 
