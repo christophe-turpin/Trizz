@@ -56,7 +56,7 @@ function Home() {
                     <p className='paragraph'>In order to play, click on the apple which is on the tree</p>
                 </Message>
                 {checkTrizzer()}
-                <h2>You accumulate {Number(points)} points, you help to plant {plantedTrizz === null ? 0 : plantedTrizz} trizz and you achieve the rank of {rank} </h2><br />
+                <h2>You accumulate {points} points, you help to plant {plantedTrizz === null ? 0 : plantedTrizz} trizz and you achieve the rank of {rank} </h2><br />
                 {trizz - plantedTrizz > 0 ? <h3>`You're able to plant {trizz - plantedTrizz} trizz` <Link to='/Maps'><Button color='teal'>Go plant Trizz</Button></Link></h3> : ""}
 
             </div>

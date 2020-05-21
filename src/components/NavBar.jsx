@@ -17,10 +17,10 @@ const FixedMenuLayout = () => (
 
                 <Dropdown item simple text='See More'>
                     <Dropdown.Menu>
-                        <Dropdown.Header><Link to='/Quiz'>Quiz</Link></Dropdown.Header>
+                        <Dropdown.Header><Link to='/quiz'>Quiz</Link></Dropdown.Header>
                         <Dropdown.Header><Link to='/articles'>Acticles</Link></Dropdown.Header>
-                        <Dropdown.Header><Link to='/Maps'>Forest Map</Link></Dropdown.Header>
-                        <Dropdown.Header><Link to='/AboutUs'>About us</Link></Dropdown.Header>
+                        <Dropdown.Header><Link to='/maps'>Forest Map</Link></Dropdown.Header>
+                        <Dropdown.Header><Link to='/aboutUs'>About us</Link></Dropdown.Header>
                     </Dropdown.Menu>
                 </Dropdown>
             </Container>

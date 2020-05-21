@@ -4,6 +4,8 @@ import { Modal, Message } from 'semantic-ui-react'
 import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet'
 import axios from 'axios'
 import Iframe from "react-iframe";
+import {useHistory} from 'react-router-dom'
+
 
 const plantations = [
     [45.101291, 4.928171, 'France'],//France
@@ -22,6 +24,7 @@ const APIKey = '7ESCVeg0KgkQwgRo1PtacPmPisCPQwvP'
 
 
 function Maps() {
+    let history = useHistory()
     const [Cam, setCam] = useState([])
     const [trizz, setTrizz] = useState()
     let [plantedTrizz, setPlantedTrizz] = useState()
@@ -44,7 +47,8 @@ function Maps() {
             alert('you have not trizz enough')
         }
         localStorage.setItem('plantedTrizz', plantedTrizz)
-        window.location.reload(false)
+        window.location.reload(true)
+        // history.push('/maps')
     }
     return (
         <>
