@@ -11,7 +11,7 @@ const FixedMenuLayout = () => (
         <Menu fixed='top' inverted>
             <Container>
                 <Menu.Item as='a'><Link to='/'>
-                    <i aria-hidden="true" class="olive tree inverted icon"></i><a href="#">Trizz</a></Link></Menu.Item>
+                    <i aria-hidden="true" class="olive tree inverted icon"></i><a href="#_listOfTriz">Trizz</a></Link></Menu.Item>
 
                 <Menu.Item as='a'><Link to='/'>Home</Link></Menu.Item>
 

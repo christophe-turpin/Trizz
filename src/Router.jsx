@@ -17,10 +17,10 @@ class Router extends React.Component {
                 <FixedMenuLayout />
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/quiz" component={QuizSetup} />
-                    <Route path="/articles" component={Article} />
-                    <Route path="/aboutUs" component={AboutUs} />
-                    <Route path="/maps" component={Maps} />
+                    <Route exact path="/quiz" component={QuizSetup} />
+                    <Route exact path="/articles" component={Article} />
+                    <Route exact path="/aboutUs" component={AboutUs} />
+                    <Route exact path="/maps" component={Maps} />
                 </Switch>
                 <Footer />
             </>
