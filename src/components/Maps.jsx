@@ -47,7 +47,7 @@ function Maps() {
             alert('you have not trizz enough')
         }
         localStorage.setItem('plantedTrizz', plantedTrizz)
-        window.location.reload(true)
+        window.location.reload(false)
         // history.push('/maps')
     }
     return (
