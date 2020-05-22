@@ -23,13 +23,19 @@ function GridExampleCelledInternally() {
         setMonth(new Date().toLocaleDateString().substr(3, 2))
     }
     function getArticles() {
-        const url = 'http://newsapi.org/v2/everything?' +
-            'q=Reforestation&' +
-            `from=2020-${month}-01&` +
+        const config = {
+            headers: { 
+                'Access-Control-Allow-Origin': 'https://trizz.netlify.app',
+                'Access-Control-Allow-Methods': '*',
+                'Access-Control-Allow-Headers': '*'
+             }
+        }
+        const url = 'https://newsapi.org/v2/everything?' +
+            'q=reforestation&' +
             'sortBy=publishedAt&' +
             'pageSize=3&' +
             'apiKey=ffa55fe5bf19423f8bdd688c681415e3';
-        Axios.get(url)
+        Axios.get(url, config)
             .then(response => setArticles(response.data.articles))
     }
     useEffect(() => {
