@@ -16,7 +16,7 @@ function CardExampleLinkCard() {
             'q=Reforestation&' +
             'sortBy=publishedAt&' +
             'pageSize=12&' +
-            'apiKey=ffa55fe5bf19423f8bdd688c681415e3';
+            'apiKey=73ab31a8ac354db9840651f3daa0bb6c';
         Axios.get(url)
             .then(response => setArticles(response.data.articles))
     }
@@ -54,6 +54,7 @@ function CardExampleLinkCard() {
                         </>)
                 })}
             </Grid>
+                            <a id='newsapi' href='https://newsapi.org' target='blank'>Empowered by newsapi.org</a>
 
             <Item.Group className='action' relaxed='very'>
                 <Item>

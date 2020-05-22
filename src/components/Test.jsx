@@ -17,32 +17,23 @@ import Rules from './Rules'
 
 function GridExampleCelledInternally() {
     const [articles, setArticles] = useState([])
-    const [month, setMonth] = useState()
-    function Clock() {
-        // setDate(new Date().toLocaleDateString())
-        setMonth(new Date().toLocaleDateString().substr(3, 2))
-    }
     function getArticles() {
         const config = {
             headers: { 
-                'Access-Control-Allow-Origin': 'https://trizz.netlify.app',
-                'Access-Control-Allow-Methods': '*',
-                'Access-Control-Allow-Headers': '*'
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'content-type, Authorization'
              }
         }
         const url = 'https://newsapi.org/v2/everything?' +
             'q=reforestation&' +
             'sortBy=publishedAt&' +
             'pageSize=3&' +
-            'apiKey=ffa55fe5bf19423f8bdd688c681415e3';
+            'apiKey=73ab31a8ac354db9840651f3daa0bb6c';
         Axios.get(url, config)
             .then(response => setArticles(response.data.articles))
     }
     useEffect(() => {
         getArticles()
-    }, [])
-    useEffect(() => {
-        Clock()
     }, [])
     return (
         <>
@@ -85,6 +76,7 @@ function GridExampleCelledInternally() {
 
                                 )
                             })}
+                            <a id='newsapi' href='https://newsapi.org' target='blank'>Empowered by newsapi.org</a>
 
                         </Segment>
                     </Grid.Column>
