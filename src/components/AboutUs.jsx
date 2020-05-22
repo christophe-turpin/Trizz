@@ -56,7 +56,7 @@ class AboutUs extends Component {
 
                     <Grid.Column>
                         <Segment><Card>
-                            <Image src='https://media-exp1.licdn.com/dms/image/C5603AQHWTZQqE3Ijcw/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=XEAiu0dtPviwk18S41s8HiqIOi63xSa2iB2FZlU2zvE' wrapped ui={false} />
+                            <Image src='https://media-exp1.licdn.com/dms/image/C5603AQFUcfaDQ0gG4g/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=yn7_JZJhqaRTxGt3sN4yxMgWAYJBZveRAI1FH_r6NOc' wrapped ui={false} />
                             <Card.Content>
                                 <Card.Header>Christophe TURPIN</Card.Header>
                                 <Card.Meta>
@@ -75,7 +75,7 @@ class AboutUs extends Component {
 
                     <Grid.Column>
                         <Segment><Card>
-                            <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQFk7dkHvecFhA/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=Jh_22nXa8AiTi8JYPHozgsgaq4aRlIc_cfpxEChY8fo' wrapped ui={false} />
+                            <Image src='https://media-exp1.licdn.com/dms/image/C4D03AQFKkCh0pnjRFA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=GrukLIebW9Ofyi2guCM7GuJc2M7wEoZ3IFpRrAYLQ2g' wrapped ui={false} />
                             <Card.Content>
                                 <Card.Header>Nadir ABDELOUAHAB</Card.Header>
                                 <Card.Meta>
