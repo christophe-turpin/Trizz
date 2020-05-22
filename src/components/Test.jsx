@@ -15,7 +15,6 @@ import {
 import trees from '../images/trees.png'
 import Rules from './Rules'
 
-
 function GridExampleCelledInternally() {
     const [articles, setArticles] = useState([])
     const [month, setMonth] = useState()
