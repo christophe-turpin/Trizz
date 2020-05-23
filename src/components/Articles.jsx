@@ -5,27 +5,22 @@ import './Articles.css'
 
 function CardExampleLinkCard() {
     const [articles, setArticles] = useState([])
-    // const [month, setMonth] = useState()
-    // function Clock() {
-    //     // setDate(new Date().toLocaleDateString())
-    //     setMonth(new Date().toLocaleDateString().substr(3, 2))
-    // }
-
     function getArticles() {
-        const url = 'http://newsapi.org/v2/everything?' +
-            'q=Reforestation&' +
-            'sortBy=publishedAt&' +
-            'pageSize=12&' +
-            'apiKey=73ab31a8ac354db9840651f3daa0bb6c';
+        // const config = {
+        //     headers: { 
+        //         'Access-Control-Allow-Origin': '*',
+        //         'Access-Control-Allow-Headers': 'content-type, Authorization'
+        //      }
+        // }
+        const url = 'https://api.currentsapi.services/v1/search?' +
+            'keywords=environment&language=en&' +
+            'apiKey=hr5y9UeDqgsIwitBUB6Lf316ratvkEr8I1hyFlNROfrcd1-P';
         Axios.get(url)
-            .then(response => setArticles(response.data.articles))
+            .then(response => setArticles(response.data.news))
     }
     useEffect(() => {
         getArticles()
     }, [])
-    // useEffect(() => {
-    //     Clock()
-    // }, [])
 
     return (
         
@@ -34,7 +29,7 @@ function CardExampleLinkCard() {
                 <h2 className='Header'>The last 12 articles</h2>
             </Message>
             <Grid id='articles' columns={4} doubling stackable container divided >
-                {articles.map(article => {
+                {articles.filter(article => articles.indexOf(article) < 12).map(article => {
                     return (
                         <>
 
@@ -42,10 +37,10 @@ function CardExampleLinkCard() {
                                 <Segment id="previewArticle">
                                     <List className='ListMap' widht='100px' height='30px' as='a' href={article.url} target='_blanck' >
 
-                                        <Image src={article.urlToImage} />
+                                        <Image src={article.image} alt='No image for this article'/>
                                         <List.Content>
                                             <List.Header><br />{article.title}</List.Header>
-                                            <br />Published {article.publishedAt.substr(0, 10)}
+                                            <br />Published {article.published.substr(0, 10)}
                                         </List.Content>
 
                                     </List>
@@ -54,7 +49,7 @@ function CardExampleLinkCard() {
                         </>)
                 })}
             </Grid>
-                            <a id='newsapi' href='https://newsapi.org' target='blank'>Empowered by newsapi.org</a>
+            <a id='newsapi' href='https://currentsapi.services/en' target='blank'>Empowered by currentsapi</a>
 
             <Item.Group className='action' relaxed='very'>
                 <Item>
