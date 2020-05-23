@@ -56,7 +56,7 @@ class AboutUs extends Component {
 
                     <Grid.Column>
                         <Segment><Card>
-                            <Image src='https://media-exp1.licdn.com/dms/image/C5603AQFUcfaDQ0gG4g/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=yn7_JZJhqaRTxGt3sN4yxMgWAYJBZveRAI1FH_r6NOc' wrapped ui={false} />
+                            <Image src='https://media-exp1.licdn.com/dms/image/C5603AQFfh3XA7lk6JQ/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=RuXpcmLRHdwTEgUas3Mxw5cOsE4w7owxiqvf5WbPADk' wrapped ui={false} />
                             <Card.Content>
                                 <Card.Header>Christophe TURPIN</Card.Header>
                                 <Card.Meta>
