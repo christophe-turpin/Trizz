@@ -36,7 +36,6 @@ function GridExampleCelledInternally() {
     return (
         <>
             <Grid columns={3} container divided stackable>
-                {console.log(articles)}
                 <Grid.Row>
                     <Grid.Column className='firstColumn' width={4}>
                         <Segment><h2>Bests Trizzers</h2> <Podium /></Segment>
