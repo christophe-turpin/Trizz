@@ -4,7 +4,6 @@ import { Modal, Message } from 'semantic-ui-react'
 import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet'
 import axios from 'axios'
 import Iframe from "react-iframe";
-import {useHistory} from 'react-router-dom'
 
 
 const plantations = [
@@ -24,7 +23,6 @@ const APIKey = '7ESCVeg0KgkQwgRo1PtacPmPisCPQwvP'
 
 
 function Maps() {
-    let history = useHistory()
     const [Cam, setCam] = useState([])
     const [trizz, setTrizz] = useState()
     let [plantedTrizz, setPlantedTrizz] = useState()
@@ -61,7 +59,7 @@ function Maps() {
             </div>
             <LeafletMap className='map' center={plantations[0]} zoom={2}>
                 <TileLayer className='cadreMap'
-                    attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+                    attribution='&copy; <a href="https://osm.org/copyright" target="_blank" rel="noopener noreferrer" >OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
