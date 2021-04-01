@@ -59,7 +59,7 @@ function Maps() {
             </div>
             <LeafletMap className='map' center={plantations[0]} zoom={2}>
                 <TileLayer className='cadreMap'
-                    attribution='&copy; <a href="https://osm.org/copyright" target="_blank" rel="noopener noreferrer" >OpenStreetMap</a> contributors'
+                    attribution='&copy; <a href="https//osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
